@@ -6,11 +6,6 @@ module.exports = {
     'plugin:import/warnings',
     'plugin:import/typescript'
   ],
-  parser: '@typescript-eslint/parser',
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module'
-  },
   plugins: [
     '@typescript-eslint',
     'perfectionist',
