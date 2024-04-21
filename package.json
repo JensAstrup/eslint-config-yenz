@@ -1,0 +1,15 @@
+{
+  "name": "eslint-config-yenz",
+  "version": "1.0.0",
+  "description": "Jens' ESLint Configuration",
+  "main": ".eslintrc.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "eslint"
+  ],
+  "author": "Jens Astrup",
+  "license": "ISC"
+}
