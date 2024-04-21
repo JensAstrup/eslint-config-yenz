@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-yenz",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Jens' ESLint Configuration",
   "main": ".eslintrc.cjs",
   "type": "commonjs",
@@ -12,7 +12,7 @@
   "peerDependencies": {
     "eslint": "^7.0.0",
     "@typescript-eslint/parser": "^4.0.0",
-    "@typescript-eslint/eslint-plugin" : "^4.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.0.0",
     "eslint-plugin-perfectionist": "^1.0.0",
     "eslint-plugin-import": "^2.29.1"
   }
