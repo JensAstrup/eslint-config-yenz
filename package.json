@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Jens' ESLint Configuration",
   "main": ".eslintrc.js",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "test": "jest"
   },
@@ -11,5 +11,8 @@
     "eslint"
   ],
   "author": "Jens Astrup",
-  "license": "ISC"
+  "license": "ISC",
+  "peerDependencies": {
+    "eslint": "^7.0.0"
+  }
 }
