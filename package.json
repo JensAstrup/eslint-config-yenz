@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-yenz",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Jens' ESLint Configuration",
   "main": ".eslintrc.js",
   "type": "commonjs",
