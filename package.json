@@ -2,7 +2,7 @@
   "name": "eslint-config-yenz",
   "version": "1.0.2",
   "description": "Jens' ESLint Configuration",
-  "main": ".eslintrc.js",
+  "main": "index.js",
   "type": "commonjs",
   "keywords": [
     "eslint"
