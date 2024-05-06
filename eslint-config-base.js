@@ -11,6 +11,11 @@ const baseConfig = {
     'perfectionist',
     'import'
   ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
   rules: {
     'dot-notation': 'error',
     'indent': ['error', 2],
