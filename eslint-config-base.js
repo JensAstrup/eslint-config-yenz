@@ -31,6 +31,12 @@ const baseConfig = {
     'perfectionist/sort-classes': 'off',
     'perfectionist/sort-interfaces': 'off',
     'perfectionist/sort-objects': 'off',
+    "perfectionist/sort-object-types": "off",
+    "padding-line-between-statements": [
+      "error",
+      { "blankLine": "always", "prev": "function", "next": "*" },
+      { "blankLine": "always", "prev": "*", "next": "function" },
+    ],
     'import/order': [
       'error',
       {
