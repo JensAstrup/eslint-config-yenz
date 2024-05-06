@@ -1,4 +1,4 @@
-module.exports = {
+const baseConfig = {
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
@@ -41,3 +41,5 @@ module.exports = {
     'import/newline-after-import': ['error', { count: 2 }]
   }
 };
+
+export default baseConfig;

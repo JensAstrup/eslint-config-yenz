@@ -1,15 +1,21 @@
 {
   "name": "eslint-config-yenz",
-  "version": "1.0.5",
+  "version": "1.0.6-beta.0",
   "description": "Jens' ESLint Configuration",
-  "main": "index.js",
-  "type": "commonjs",
+  "main": "eslint-config-base.js",
   "keywords": [
     "eslint"
   ],
   "author": "Jens Astrup",
   "license": "ISC",
-  "dependencies": {
+  "peerDependencies": {
+    "eslint": "^8.0.0",
+    "@typescript-eslint/parser": "^7.7.0",
+    "@typescript-eslint/eslint-plugin": "^7.7.0",
+    "eslint-plugin-perfectionist": "^2.9.0",
+    "eslint-plugin-import": "^2.29.1"
+  }
+  "devDependencies": {
     "eslint": "^8.0.0",
     "@typescript-eslint/parser": "^7.7.0",
     "@typescript-eslint/eslint-plugin": "^7.7.0",
