@@ -21,7 +21,7 @@ const baseConfig = {
     'indent': ['error', 2],
     'linebreak-style': ['error', 'unix'],
     'no-console': ['error', {'allow': ['error', 'warn']}],
-    'no-magic-numbers': 'warn',
+    'no-magic-numbers': ['error', {'ignoreArrayIndexes': true}],
     'no-use-before-define': 'off',
     'quotes': ['error', 'single'],
     'semi': ['error', 'never'],
