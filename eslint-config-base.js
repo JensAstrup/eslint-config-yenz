@@ -5,13 +5,15 @@ const baseConfig = {
     'plugin:perfectionist/recommended-natural',
     'plugin:import/warnings',
     'plugin:import/typescript',
+    'plugin:jest/recommended'
   ],
   plugins: [
     '@typescript-eslint',
     'perfectionist',
     'import',
     'no-loops',
-    'yenz'
+    'yenz',
+    'jest'
   ],
   'parser': '@typescript-eslint/parser',
   'parserOptions': {
@@ -59,8 +61,12 @@ const baseConfig = {
     {
       'files': ['test/**'],
       'plugins': ['jest'],
-      'extends': ['plugin:jest/recommended'],
-      'rules': { }
+      'extends': ['plugin:jest/recommended', 'plugin:jest/style'],
+      'rules': {
+        'jest/prefer-called-with': 'error',
+        'jest/prefer-equality-matcher': 'error',
+        'jest/prefer-spy-on': 'error'
+      }
     }
   ]
 }
