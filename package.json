@@ -8,18 +8,26 @@
   ],
   "author": "Jens Astrup",
   "license": "ISC",
-  "peerDependencies": {
-    "eslint": "^8.0.0",
-    "@typescript-eslint/parser": "^7.7.0",
+  "dependencies": {
     "@typescript-eslint/eslint-plugin": "^7.7.0",
+    "@typescript-eslint/parser": "^7.7.0",
+    "eslint": "^8.49.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jest": "^28.5.0",
+    "eslint-plugin-no-loops": "^0.3.0",
     "eslint-plugin-perfectionist": "^2.9.0",
-    "eslint-plugin-import": "^2.29.1"
+    "typescript": "^5.4.5"
   },
   "devDependencies": {
-    "eslint": "^8.0.0",
-    "@typescript-eslint/parser": "^7.7.0",
+    "@eslint/js": "^9.3.0",
     "@typescript-eslint/eslint-plugin": "^7.7.0",
+    "@typescript-eslint/parser": "^7.7.0",
+    "eslint": "^8.49.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-no-loops": "^0.3.0",
     "eslint-plugin-perfectionist": "^2.9.0",
-    "eslint-plugin-import": "^2.29.1"
+    "typescript-eslint": "^7.10.0",
+    "eslint-config-type-ordering": "link:./rules/type-ordering",
+    "eslint-plugin-type-ordering": "link:./rules/type-ordering"
   }
 }
