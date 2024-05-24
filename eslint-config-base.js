@@ -11,7 +11,7 @@ const baseConfig = {
     'perfectionist',
     'import',
     'no-loops',
-    'type-ordering'
+    'yenz'
   ],
   'parser': '@typescript-eslint/parser',
   'parserOptions': {
@@ -19,7 +19,7 @@ const baseConfig = {
     'sourceType': 'module'
   },
   rules: {
-    'type-ordering/type-ordering': 'error',
+    'yenz/type-ordering': 'error',
     'dot-notation': 'error',
     'indent': ['error', 2],
     'linebreak-style': ['error', 'unix'],

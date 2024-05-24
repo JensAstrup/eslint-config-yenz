@@ -16,6 +16,7 @@
     "eslint-plugin-jest": "^28.5.0",
     "eslint-plugin-no-loops": "^0.3.0",
     "eslint-plugin-perfectionist": "^2.9.0",
+    "eslint-plugin-yenz": "^1.0.0-beta.0",
     "typescript": "^5.4.5"
   },
   "devDependencies": {
@@ -26,8 +27,6 @@
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-no-loops": "^0.3.0",
     "eslint-plugin-perfectionist": "^2.9.0",
-    "typescript-eslint": "^7.10.0",
-    "eslint-config-type-ordering": "link:./rules/type-ordering",
-    "eslint-plugin-type-ordering": "link:./rules/type-ordering"
+    "typescript-eslint": "^7.10.0"
   }
 }
