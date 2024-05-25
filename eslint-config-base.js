@@ -48,6 +48,7 @@ const baseConfig = {
     '@typescript-eslint/prefer-find': 'error',
     '@typescript-eslint/no-floating-promises': 'off',
     '@typescript-eslint/no-misused-promises': 'off',
+    '@typescript-eslint/unbound-method': 'off',
     '@stylistic/no-multiple-empty-lines': 'off',
     '@stylistic/comma-dangle': 'off',
     '@stylistic/indent': 'off',
