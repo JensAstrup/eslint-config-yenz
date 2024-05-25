@@ -49,6 +49,7 @@ const baseConfig = {
     '@typescript-eslint/no-floating-promises': 'off',
     '@stylistic/no-multiple-empty-lines': 'off',
     '@stylistic/comma-dangle': 'off',
+    '@stylistic/indent': 'off',
     'padding-line-between-statements': [
       'error',
       { 'blankLine': 'always', 'prev': 'function', 'next': '*' },
