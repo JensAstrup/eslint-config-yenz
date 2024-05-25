@@ -46,6 +46,7 @@ const baseConfig = {
     '@typescript-eslint/no-confusing-void-expression': 'error',
     '@typescript-eslint/no-unnecessary-condition': 'error',
     '@typescript-eslint/prefer-find': 'error',
+    '@stylistic/no-multiple-empty-lines': 'off',
     'padding-line-between-statements': [
       'error',
       { 'blankLine': 'always', 'prev': 'function', 'next': '*' },
