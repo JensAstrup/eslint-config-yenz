@@ -2,13 +2,16 @@ const baseConfig = {
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-type-checked',
     'plugin:perfectionist/recommended-natural',
     'plugin:import/warnings',
     'plugin:import/typescript',
-    'plugin:jest/recommended'
+    'plugin:jest/recommended',
+    'plugin:@stylistic/recommended-extends'
   ],
   plugins: [
     '@typescript-eslint',
+    '@stylistic',
     'perfectionist',
     'import',
     'no-loops',
@@ -18,7 +21,8 @@ const baseConfig = {
   'parser': '@typescript-eslint/parser',
   'parserOptions': {
     'ecmaVersion': 2020,
-    'sourceType': 'module'
+    'sourceType': 'module',
+    'project': './tsconfig.json'
   },
   rules: {
     'yenz/type-ordering': 'error',
@@ -38,6 +42,10 @@ const baseConfig = {
     'perfectionist/sort-interfaces': 'off',
     'perfectionist/sort-objects': 'off',
     'perfectionist/sort-object-types': 'off',
+    '@typescript-eslint/explicit-function-return-type': 'error',
+    '@typescript-eslint/no-confusing-void-expression': 'error',
+    '@typescript-eslint/no-unnecessary-condition': 'error',
+    '@typescript-eslint/prefer-find': 'error',
     'padding-line-between-statements': [
       'error',
       { 'blankLine': 'always', 'prev': 'function', 'next': '*' },
