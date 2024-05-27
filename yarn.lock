@@ -1630,10 +1630,10 @@ eslint-plugin-perfectionist@^2.9.0:
     minimatch "^9.0.3"
     natural-compare-lite "^1.4.0"
 
-eslint-plugin-yenz@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-yenz/-/eslint-plugin-yenz-1.0.0.tgz#e6f7268584f2d7ae8fc6092502cfb77d8c6ea005"
-  integrity sha512-+DbHy7NMyeUfxbO9SGZNxh7A3+i3Rx1Hk1iLL9yT9Esal5p/sJIOSDQxkxyoWacYyKRnWDGER3yjY6M2OTXAbg==
+eslint-plugin-yenz@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-yenz/-/eslint-plugin-yenz-1.1.0.tgz#81b691d4eb396f3528c1f57fb7167420fa8ed208"
+  integrity sha512-EBRVOnamSNSozBdRz5ZP9A1dDRQ6xNMXR0BsDrUUBHCBwdYwQu1kYYLcvTxRYtH++lBoKTUb8P/YyqwOXabBXw==
 
 eslint-scope@^7.2.2:
   version "7.2.2"
