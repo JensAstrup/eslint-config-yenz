@@ -51,6 +51,11 @@ const baseConfig = {
     '@stylistic/no-multiple-empty-lines': 'off',
     '@stylistic/comma-dangle': 'off',
     '@stylistic/indent': 'off',
+    '@typescript-eslint/no-unsafe-call': 'off',
+    '@typescript-eslint/no-unsafe-member-access': 'off',
+    '@typescript-eslint/no-unsafe-assignment': 'off',
+    '@typescript-eslint/no-unsafe-return': 'off',
+    '@typescript-eslint/no-unsafe-argument': 'off',
     'padding-line-between-statements': [
       'error',
       { blankLine: 'always', prev: 'function', next: '*' },
