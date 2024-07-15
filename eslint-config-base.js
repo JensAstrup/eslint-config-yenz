@@ -35,6 +35,7 @@ const baseConfig = {
     'quotes': ['error', 'single'],
     'semi': ['error', 'never'],
     'brace-style': ['error', 'stroustrup'],
+    'perfectionist/sort-enums': 'off',
     'perfectionist/sort-imports': 'off',
     'perfectionist/sort-union-types': 'off',
     'perfectionist/sort-classes': 'off',
