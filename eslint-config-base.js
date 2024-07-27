@@ -62,6 +62,7 @@ const baseConfig = {
       { blankLine: 'always', prev: 'function', next: '*' },
       { blankLine: 'always', prev: '*', next: 'function' },
     ],
+    'import/no-named-as-default': 'off',
     'import/order': [
       'error',
       {
