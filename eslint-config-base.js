@@ -43,6 +43,7 @@ const baseConfig = {
     'perfectionist/sort-objects': 'off',
     'perfectionist/sort-object-types': 'off',
     '@typescript-eslint/explicit-function-return-type': 'error',
+    '@typescript-eslint/explicit-member-accessibility': 'off',
     '@typescript-eslint/no-confusing-void-expression': 'error',
     '@typescript-eslint/no-unnecessary-condition': 'error',
     '@typescript-eslint/prefer-find': 'error',
