@@ -29,6 +29,7 @@ const baseConfig = {
     'dot-notation': 'error',
     'indent': ['error', 2],
     'linebreak-style': ['error', 'unix'],
+    'no-case-declarations': 'off',
     'no-console': ['error', { allow: ['error', 'warn'] }],
     'no-magic-numbers': ['error', { ignoreArrayIndexes: true, ignore: [-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10] }],
     'no-use-before-define': 'off',
