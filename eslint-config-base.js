@@ -3,7 +3,7 @@ const baseConfig = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-type-checked',
-    'plugin:perfectionist/recommended-natural',
+    'plugin:perfectionist/recommended-natural-legacy',
     'plugin:import/warnings',
     'plugin:import/typescript',
     'plugin:jest/recommended',
