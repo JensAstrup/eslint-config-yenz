@@ -38,6 +38,8 @@ const baseConfig = {
     'brace-style': ['error', 'stroustrup'],
     'perfectionist/sort-enums': 'off',
     'perfectionist/sort-imports': 'off',
+    'perfectionist/sort-named-exports': 'off',
+    'perfectionist/sort-named-imports': 'off',
     'perfectionist/sort-union-types': 'off',
     'perfectionist/sort-classes': 'off',
     'perfectionist/sort-interfaces': 'off',
