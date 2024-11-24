@@ -38,6 +38,8 @@ const baseConfig = {
     'brace-style': ['error', 'stroustrup'],
     'perfectionist/sort-enums': 'off',
     'perfectionist/sort-imports': 'off',
+    'perfectionist/sort-named-exports': 'off',
+    'perfectionist/sort-named-imports': 'off',
     'perfectionist/sort-union-types': 'off',
     'perfectionist/sort-classes': 'off',
     'perfectionist/sort-interfaces': 'off',
@@ -59,6 +61,8 @@ const baseConfig = {
     '@typescript-eslint/no-unsafe-assignment': 'off',
     '@typescript-eslint/no-unsafe-return': 'off',
     '@typescript-eslint/no-unsafe-argument': 'off',
+    "@typescript-eslint/no-unused-vars": ["error", {varsIgnorePattern: '^_$', argsIgnorePattern: '^_$'}],
+
     'padding-line-between-statements': [
       'error',
       { blankLine: 'always', prev: 'function', next: '*' },
