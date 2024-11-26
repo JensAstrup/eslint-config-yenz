@@ -33,9 +33,9 @@ export default [...fixupConfigRules(compat.extends(
         "@typescript-eslint": fixupPluginRules(typescriptEslint),
         "@stylistic": fixupPluginRules(stylistic),
         "perfectionist": perfectionist,
-        import: fixupPluginRules(_import),
+        "import": fixupPluginRules(_import),
         yenz,
-        jest: fixupPluginRules(jest),
+        "jest": fixupPluginRules(jest),
     },
 
     languageOptions: {
