@@ -91,7 +91,6 @@ export default [...fixupConfigRules(compat.extends(
   'no-console': ['error', {
     allow: ['error', 'warn']
   }],
-  'no-loops': 'error',
   'no-magic-numbers': ['error', {
     ignoreArrayIndexes: true,
     ignore: [-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
