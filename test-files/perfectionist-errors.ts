@@ -1,7 +1,7 @@
 // File with sorting and organization errors for perfectionist plugin
 
 // Unsorted imports
-import { Logger } from './utils/logger';
+import { Logger } from './utils/logger'
 
 // Unsorted interface properties
 interface UserProfile {
@@ -21,11 +21,11 @@ const userConfig = {
   language: 'en',
   debugMode: false,
   maxRetries: 3,
-};
+}
 
 // Unsorted array elements (where sorting makes sense)
-const priorities = ['medium', 'low', 'urgent', 'high'];
-const statusOptions = ['pending', 'active', 'cancelled', 'completed'];
+const priorities = ['medium', 'low', 'urgent', 'high']
+const statusOptions = ['pending', 'active', 'cancelled', 'completed']
 
 // Unsorted enum values
 enum UserRole {
@@ -46,18 +46,18 @@ function processUser(
   id: number,
   isActive: boolean
 ) {
-  return { id, username, email, age, isActive };
+  return { id, username, email, age, isActive }
 }
 
 // Unsorted class members
 class UserManager {
-  private users: UserProfile[] = [];
-  public currentUser: UserProfile | null = null;
-  private logger: Logger;
-  public isLoading: boolean = false;
+  private users: UserProfile[] = []
+  public currentUser: UserProfile | null = null
+  private logger: Logger
+  public isLoading: boolean = false
   
   constructor(logger: Logger) {
-    this.logger = logger;
+    this.logger = logger
   }
   
   public updateUser(user: UserProfile): void {
@@ -65,12 +65,12 @@ class UserManager {
   }
   
   private validateUser(user: UserProfile): boolean {
-    return true;
+    return true
   }
   
   public createUser(userData: Partial<UserProfile>): UserProfile {
     // implementation
-    return {} as UserProfile;
+    return {} as UserProfile
   }
   
   public deleteUser(id: number): void {
@@ -78,13 +78,13 @@ class UserManager {
   }
   
   private logAction(action: string): void {
-    this.logger.log(action);
+    this.logger.log(action)
   }
 }
 
 // Unsorted destructuring
-const { username, id, email, createdAt, avatar, age } = userProfile;
+const { username, id, email, createdAt, avatar, age } = userProfile
 
 // Unsorted exports
-export { priorities, processUser, statusOptions, UserManager, UserRole };
-export type { Status, UserProfile };
+export { priorities, processUser, statusOptions, UserManager, UserRole }
+export type { Status, UserProfile }

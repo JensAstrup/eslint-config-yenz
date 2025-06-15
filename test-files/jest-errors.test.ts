@@ -5,12 +5,12 @@ describe('Test Suite', () => {
   // Missing beforeEach/afterEach when needed
   
   // Focused tests (should not be committed)
-  fit('focused test', () => {
+  it.only('focused test', () => {
     expect(true).toBe(true)
   })
   
   // Skipped tests without explanation
-  xit('skipped test', () => {
+  it.skip('skipped test', () => {
     expect(false).toBe(true)
   })
   
@@ -64,7 +64,7 @@ describe('Test Suite', () => {
   })
   
   // Disabled describe block
-  xdescribe('disabled describe', () => {
+  describe.skip('disabled describe', () => {
     it('test in disabled describe', () => {
       expect(true).toBe(true)
     })

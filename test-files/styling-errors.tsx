@@ -1,19 +1,19 @@
 // @ts-nocheck
 
 // React component with styling and formatting errors
-import React from 'react';
+import React from 'react'
 
 // Component with poor naming and structure
 const badComponent = (props: any) => {
   // Missing proper indentation
-  const { data, loading, error } = props;
+  const { data, loading, error } = props
 
   // Inline styles instead of proper styling approach
   const inlineStyles = {
     backgroundColor: 'red',
     fontSize: '16px',
     marginTop: '10px'
-  };
+  }
 
   // Poor JSX formatting
   return (
@@ -26,29 +26,29 @@ const badComponent = (props: any) => {
           <span>{item.name}</span>
           <button onClick={() => {
             // Bad event handler formatting
-            console.log('clicked');
-            handleClick(item.id);
+            console.log('clicked')
+            handleClick(item.id)
           }}>Click</button>
         </div>
       )}
     </div>
-  );
-};
+  )
+}
 
 // Function with inconsistent spacing and formatting
 const handleClick = (id: number) => {
   // Missing spaces around operators
-  const result = id * 2 + 1;
-  console.log(result);
+  const result = id * 2 + 1
+  console.log(result)
 }
 
 // Component with mixed quote styles and poor formatting  
 const AnotherBadComponent: React.FC = () => {
-  const items = ["item1", 'item2', "item3"];
+  const items = ['item1', 'item2', 'item3']
 
   // Poor conditional rendering
   if (items.length === 0) {
-    return <div>No items</div>;
+    return <div>No items</div>
   }
 
   return (
@@ -56,13 +56,13 @@ const AnotherBadComponent: React.FC = () => {
       {items.map((item, index) => {
         return (
           <div key={index} className='item-wrapper'>
-            <p style={{ color: "blue", fontWeight: "bold" }}>{item}</p>
+            <p style={{ color: 'blue', fontWeight: 'bold' }}>{item}</p>
           </div>
-        );
+        )
       })}
     </>
-  );
-};
+  )
+}
 
 // Bad prop types and formatting
 interface BadProps {
@@ -78,10 +78,10 @@ class OldStyleComponent extends React.Component<BadProps> {
       <div onClick={() => this.props.onClick('test')}>
         {this.props.children}
       </div>
-    );
+    )
   }
 }
 
 // Poor export structure
-export default badComponent;
-export { AnotherBadComponent, OldStyleComponent };
+export default badComponent
+export { AnotherBadComponent, OldStyleComponent }
