@@ -7,7 +7,6 @@ import jest from 'eslint-plugin-jest'
 import perfectionist from 'eslint-plugin-perfectionist'
 import yenz from 'eslint-plugin-yenz'
 
-
 const baseConfig = {
   files: ['**/*.ts', '**/*.tsx'],
   languageOptions: {
@@ -30,9 +29,9 @@ const baseConfig = {
   plugins: {
     '@typescript-eslint': typescriptEslint,
     '@stylistic': stylistic,
-    'perfectionist': perfectionist,
-    'import': importPlugin,
-    'yenz': yenz
+    perfectionist,
+    import: importPlugin,
+    yenz
   },
   rules: {
     // ESLint recommended rules
@@ -114,9 +113,15 @@ const baseConfig = {
 }
 
 const testConfig = {
-  files: ['test/**/*.ts', 'test/**/*.tsx', 'tests/**/*.ts', 'tests/**/*.tsx', 'test-files/**/*.ts', 'test-files/**/*.tsx', '**/*.test.ts', '**/*.test.tsx', '**/*.spec.ts', '**/*.spec.tsx'],
+  files: [
+    'test/**/*.ts', 'test/**/*.tsx',
+    'tests/**/*.ts', 'tests/**/*.tsx',
+    'test-files/**/*.ts', 'test-files/**/*.tsx',
+    '**/*.test.ts', '**/*.test.tsx',
+    '**/*.spec.ts', '**/*.spec.tsx'
+  ],
   plugins: {
-    'jest': jest
+    jest
   },
   languageOptions: {
     globals: {
@@ -141,7 +146,10 @@ export default [
       'build/**',
       'coverage/**',
       '*.min.js'
-    ]
+    ],
+    linterOptions: {
+      reportUnusedDisableDirectives: true
+    }
   },
   baseConfig,
   testConfig
