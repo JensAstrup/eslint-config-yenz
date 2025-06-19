@@ -53,7 +53,9 @@ const baseConfig = {
     '@typescript-eslint/no-unsafe-return': 'warn',
     '@typescript-eslint/no-unused-vars': ['error', {
       varsIgnorePattern: '^_+',
-      argsIgnorePattern: '^_+'
+      argsIgnorePattern: '^_+',
+      caughtErrorsIgnorePattern: '^_+',
+    destructuredArrayIgnorePattern: '^_+'
     }],
     '@typescript-eslint/prefer-find': 'warn',
     '@typescript-eslint/unbound-method': 'off',
