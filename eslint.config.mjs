@@ -52,8 +52,8 @@ const baseConfig = {
     '@typescript-eslint/no-unsafe-member-access': 'warn',
     '@typescript-eslint/no-unsafe-return': 'warn',
     '@typescript-eslint/no-unused-vars': ['error', {
-      varsIgnorePattern: '^_$',
-      argsIgnorePattern: '^_$'
+      varsIgnorePattern: '^_+',
+      argsIgnorePattern: '^_+'
     }],
     '@typescript-eslint/prefer-find': 'warn',
     '@typescript-eslint/unbound-method': 'off',
