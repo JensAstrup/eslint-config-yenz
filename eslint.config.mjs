@@ -134,7 +134,8 @@ const testConfig = {
     'jest/prefer-called-with': 'error',
     'jest/prefer-equality-matcher': 'error',
     'jest/prefer-spy-on': 'error',
-    'no-magic-numbers': 'off'
+    'no-magic-numbers': 'off',
+    "@typescript-eslint/no-unsafe-call": 'off'
   }
 }
 
