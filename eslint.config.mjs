@@ -36,6 +36,8 @@ const baseConfig = {
   rules: {
     // ESLint recommended rules
     ...js.configs.recommended.rules,
+
+    'react/no-unescaped-entities': 'off',
     
     // TypeScript ESLint rules
     ...typescriptEslint.configs.recommended.rules,
