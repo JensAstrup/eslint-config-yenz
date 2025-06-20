@@ -8,6 +8,8 @@ const badComponent = (props: any) => {
   // Missing proper indentation
   const { data, loading, error } = props
 
+
+  
   // Inline styles instead of proper styling approach
   const inlineStyles = {
     backgroundColor: 'red',
