@@ -66,7 +66,7 @@ export default {
     'no-console': ['error', { allow: ['error', 'warn'] }],
     'no-magic-numbers': ['error', {
       ignoreArrayIndexes: true,
-      ignore: [-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+      ignore: [-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 60]  // 60 is often used for seconds
     }],
     'no-use-before-define': 'off',
     'padding-line-between-statements': ['error', 
