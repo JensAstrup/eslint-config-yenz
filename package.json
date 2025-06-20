@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-yenz",
-  "version": "9.0.4-alpha.0",
+  "version": "9.0.4-alpha.1",
   "description": "Jens' ESLint Configuration",
   "main": "index.mjs",
   "keywords": [
