@@ -8,6 +8,11 @@ import perfectionist from 'eslint-plugin-perfectionist'
 import yenz from 'eslint-plugin-yenz'
 
 const plugins = {
+  '@stylistic': stylistic,
+  '@typescript-eslint': typescriptEslint,
+  'import': importPlugin,
+  'jest': jest,
+  'perfectionist': perfectionist,
   'yenz': yenz
 }
 
