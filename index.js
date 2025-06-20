@@ -31,7 +31,6 @@ export default {
     // Stylistic rules
     '@stylistic/comma-dangle': 'off',
     '@stylistic/indent': 'off',
-    '@stylistic/no-multiple-empty-lines': 'off',
 
     // Import rules
     'import/newline-after-import': ['error', { count: 2 }],
