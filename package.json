@@ -1,8 +1,8 @@
 {
   "name": "eslint-config-yenz",
-  "version": "9.0.1",
+  "version": "9.0.2",
   "description": "Jens' ESLint Configuration",
-  "main": "eslint.config.mjs",
+  "main": "index.mjs",
   "keywords": [
     "eslint"
   ],
