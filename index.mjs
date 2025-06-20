@@ -1,4 +1,3 @@
-import js from '@eslint/js'
 import stylistic from '@stylistic/eslint-plugin'
 import typescriptEslint from '@typescript-eslint/eslint-plugin'
 import typescriptParser from '@typescript-eslint/parser'
@@ -6,33 +5,10 @@ import importPlugin from 'eslint-plugin-import'
 import jest from 'eslint-plugin-jest'
 import perfectionist from 'eslint-plugin-perfectionist'
 import yenz from 'eslint-plugin-yenz'
+import js from '@eslint/js'
 
-const baseConfig = {
-  files: ['**/*.ts', '**/*.tsx'],
-  languageOptions: {
-    parser: typescriptParser,
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    parserOptions: {
-      project: './tsconfig.json'
-    },
-    globals: {
-      console: 'readonly',
-      process: 'readonly',
-      Buffer: 'readonly',
-      __dirname: 'readonly',
-      __filename: 'readonly',
-      global: 'readonly',
-      globalThis: 'readonly'
-    }
-  },
-  plugins: {
-    '@typescript-eslint': typescriptEslint,
-    '@stylistic': stylistic,
-    perfectionist,
-    import: importPlugin,
-    yenz
-  },
+
+export default {
   rules: {
     // ESLint recommended rules
     ...js.configs.recommended.rules,
@@ -64,8 +40,8 @@ const baseConfig = {
 
     // Stylistic rules
     '@stylistic/comma-dangle': 'off',
+    '@stylistic/no-multiple-empty-lines': ['error', { max: 2 }],
     '@stylistic/indent': 'off',
-    '@stylistic/no-multiple-empty-lines': 'off',
 
     // Import rules
     'import/newline-after-import': ['error', { count: 2 }],
@@ -100,7 +76,7 @@ const baseConfig = {
     'no-console': ['error', { allow: ['error', 'warn'] }],
     'no-magic-numbers': ['error', {
       ignoreArrayIndexes: true,
-      ignore: [-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+      ignore: [-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 60]  // 60 is often used for seconds
     }],
     'no-use-before-define': 'off',
     'padding-line-between-statements': ['error', 
@@ -115,47 +91,3 @@ const baseConfig = {
     'yenz/type-ordering': 'error'
   }
 }
-
-const testConfig = {
-  files: [
-    'test/**/*.ts', 'test/**/*.tsx',
-    'tests/**/*.ts', 'tests/**/*.tsx',
-    'test-files/**/*.ts', 'test-files/**/*.tsx',
-    '**/*.test.ts', '**/*.test.tsx',
-    '**/*.spec.ts', '**/*.spec.tsx'
-  ],
-  plugins: {
-    jest
-  },
-  languageOptions: {
-    globals: {
-      ...jest.environments.globals.globals
-    }
-  },
-  rules: {
-    ...jest.configs.recommended.rules,
-    ...jest.configs.style.rules,
-    'jest/prefer-called-with': 'error',
-    'jest/prefer-equality-matcher': 'error',
-    'jest/prefer-spy-on': 'error',
-    'no-magic-numbers': 'off',
-    "@typescript-eslint/no-unsafe-call": 'off'
-  }
-}
-
-export default [
-  {
-    ignores: [
-      'node_modules/**',
-      'dist/**',
-      'build/**',
-      'coverage/**',
-      '*.min.js'
-    ],
-    linterOptions: {
-      reportUnusedDisableDirectives: true
-    }
-  },
-  baseConfig,
-  testConfig
-]

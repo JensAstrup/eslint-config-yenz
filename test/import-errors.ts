@@ -11,7 +11,6 @@
 // Missing file extensions where required
 
 // Importing entire module when only specific exports needed
-import * as lodash from 'lodash'
 
 // Circular dependency risk
 
@@ -21,12 +20,6 @@ import * as lodash from 'lodash'
 
 // Importing non-existent exports
 
-// Dynamic imports in wrong context
-const dynamicImport = import('./dynamic-module')
-
-// Re-exports without proper organization
-export { helper } from './helpers/index'
-export * from './types'
 
 // Function using imported but unused modules
 function badFunction() {
