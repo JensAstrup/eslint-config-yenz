@@ -90,10 +90,12 @@ const rules = {
   'linebreak-style': ['error', 'unix'],
   'no-case-declarations': 'off',
   'no-console': ['error', { allow: ['error', 'warn'] }],
+  'eol-last': ['error', 'always'],
   'no-magic-numbers': ['error', {
     ignoreArrayIndexes: true,
-    ignore: [-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 60]  // 60 is often used for seconds
+    ignore: [-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 60, 100]  // 60 is often used for seconds, 100 is often used for percentage
   }],
+  'no-trailing-spaces': 'warn',
   'no-use-before-define': 'off',
   'padding-line-between-statements': ['error', 
     { blankLine: 'always', prev: 'function', next: '*' },
