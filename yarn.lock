@@ -669,10 +669,10 @@ eslint-plugin-perfectionist@^3.9.0:
     minimatch "^9.0.5"
     natural-compare-lite "^1.4.0"
 
-eslint-plugin-yenz@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-yenz/-/eslint-plugin-yenz-2.0.0.tgz#755c41e882728a3e9a1ba40f10cba3e09673f511"
-  integrity sha512-5YicUbjNlrWbWtywrehQd79qC8TCYFbDBAHer4CD6tNzSzcEIE/LAN2TO7JAJMBSkGvxQXuks8m8tsBnfJID1A==
+eslint-plugin-yenz@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-yenz/-/eslint-plugin-yenz-2.1.0.tgz#82636853761b010146e47eb15d9672ce1f616c5c"
+  integrity sha512-PTezGt0pWVrfyBxNj+RE5PzikZlzz5CcdxPja8huSaCp0cVBhoBiAffu9kxL8gh7f84DQGRKhDEiJWCd5Ihrkg==
 
 eslint-visitor-keys@^3.3.0, eslint-visitor-keys@^3.4.3:
   version "3.4.3"
