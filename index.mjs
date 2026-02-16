@@ -13,7 +13,7 @@ const plugins = {
   'import': importPlugin,
   'jest': jest,
   'perfectionist': perfectionist,
-  'yenz': yenz
+  ...yenz.configs.all.plugins
 }
 
 const languageOptions = {
@@ -105,8 +105,7 @@ const rules = {
   'semi': ['error', 'never'],
 
   // Custom plugin rules
-  'yenz/no-loops': 'error',
-  'yenz/type-ordering': 'error'
+  ...yenz.configs.all.rules
 }
 
 // Export full config
