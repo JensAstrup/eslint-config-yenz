@@ -4,13 +4,13 @@
   "description": "Used to test eslint-config-yenz",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "lint": "eslint ."
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-"@eslint/js": "^9.17.0",
+    "@eslint/js": "9.17.0",
     "@stylistic/eslint-plugin": "^2.10.0",
     "@typescript-eslint/eslint-plugin": "^8.16.0",
     "@typescript-eslint/parser": "^8.16.0",
