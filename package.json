@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-yenz",
-  "version": "10.1.0",
+  "version": "10.1.1",
   "description": "Jens' ESLint Configuration",
   "main": "index.mjs",
   "keywords": [
@@ -17,18 +17,18 @@
     "@stylistic/eslint-plugin": "5.3.1",
     "@typescript-eslint/eslint-plugin": "8.41.0",
     "@typescript-eslint/parser": "8.41.0",
-    "eslint-plugin-import": "2.32.0",
+    "eslint-plugin-import-x": "4.16.1",
     "eslint-plugin-jest": "28.5.0",
     "eslint-plugin-perfectionist": "3.9.0",
-    "eslint-plugin-yenz": "2.1.0",
+    "eslint-plugin-yenz": "2.1.1",
     "typescript-eslint": "8.41.0"
   },
   "devDependencies": {
-    "eslint": "9.29.0",
+    "eslint": "10.0.1",
     "typescript": "5.8.3"
   },
   "peerDependencies": {
-    "eslint": ">=9.0.0 <10.0.0",
+    "eslint": ">=10.0.0 <11.0.0",
     "typescript": ">=5.4.5 <6.0.0"
   },
   "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
