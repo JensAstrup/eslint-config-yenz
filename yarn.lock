@@ -448,10 +448,10 @@ eslint-plugin-perfectionist@^5.9.0:
     "@typescript-eslint/utils" "^8.58.2"
     natural-orderby "^5.0.0"
 
-eslint-plugin-yenz@^2.2.0-beta.2:
-  version "2.2.0-beta.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-yenz/-/eslint-plugin-yenz-2.2.0-beta.2.tgz#a75ab332b311c612aac99f0db9ec0a64109be861"
-  integrity sha512-1RWtaqwpc/8ncLwQJi5uK1Ps2CMaKrkQxEP8/j4zMt2EzbQj3vOF6nu/vzariutEoAOnMfMnZytK7/7RiRsuKA==
+eslint-plugin-yenz@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-yenz/-/eslint-plugin-yenz-2.2.0.tgz#69d4ecd90ec6517f276e5e861dd10ec3c4a767ee"
+  integrity sha512-V0hyvMknr9RLByurfsE6tJGiYC+TNdO61IFkYawrfRmZvLpSZbMRUZJgkOrk8BXRGsw7sntdnsr9t1430/nk2Q==
 
 eslint-scope@^9.1.2:
   version "9.1.2"
