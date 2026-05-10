@@ -104,8 +104,9 @@ const rules = {
   'quotes': ['error', 'single'],
   'semi': ['error', 'never'],
 
-  // Custom plugin rules
-  ...yenz.configs.all.rules
+  // Custom plugin rules (configs.all omits some rules; enable explicitly)
+  ...yenz.configs.all.rules,
+  'yenz/export-at-end-of-file': 'error'
 }
 
 // Export full config

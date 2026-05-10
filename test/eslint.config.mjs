@@ -71,7 +71,8 @@ export default [
       'jest/prefer-equality-matcher': 'error',
       'jest/prefer-spy-on': 'error',
       'no-magic-numbers': 'off',
-      '@typescript-eslint/no-unsafe-call': 'off'
+      '@typescript-eslint/no-unsafe-call': 'off',
+      'yenz/export-at-end-of-file': 'error'
     }
   }
 ]
